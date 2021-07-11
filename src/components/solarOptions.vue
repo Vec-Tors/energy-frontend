@@ -26,6 +26,7 @@ export default {
 name:"solarOptions",
 props:['energy','units','ppe','pps']
 }
+</script>
 
 <style scoped>
 #main{
