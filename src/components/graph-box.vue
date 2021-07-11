@@ -26,5 +26,7 @@ data:()=>{
 </script>
 
 <style scoped>
-
+#main {
+    background-color: rgb(204, 252, 203);
+}
 </style>

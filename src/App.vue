@@ -39,18 +39,26 @@ export default {
 }
 </script>
 
-<style scoped>
-body{
-  background: rgb(243, 243, 243);
+<style>
+body {
+  background: rgb(188, 255, 245);
+
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: rgb(93, 115, 126);
   display:flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  
+
+}
+#main {
+  border-style: solid;
+  border-width: 2px; 
+  border-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 </style>

@@ -26,6 +26,7 @@ data:()=>{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    background-color: rgb(204, 252, 203);
 }
 .secondBox {
     background: white;

@@ -25,9 +25,14 @@ export default {
 </script>
 
 <style scoped>
+#main {
+    background-color: rgb(204, 252, 203);
+}
+
 .inputtextbox{
   border-style: solid;
   border-width: 20px;
   border-color: green;
+  background-color: rgb(150, 230, 179);
 }
 </style>
