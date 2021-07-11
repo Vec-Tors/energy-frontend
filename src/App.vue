@@ -1,28 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <inputBox/>
+    <energyUsageBox ppe="10" energy="500" units="btu"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import inputBox from './components/inputBox.vue'
+import energyUsageBox from './components/energyUsageBox.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    inputBox,
+    energyUsageBox
   }
 }
 </script>
 
-<style>
+<style scoped>
+body{
+  background: rgb(243, 243, 243);
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  display:flex;
+  flex-wrap: wrap;
+  
 }
 </style>
