@@ -11,10 +11,9 @@
 <script>
 export default {
 name:"energyUsageBox",
-props:['energy','units','ppe'],
+props:{energy:Number,units:String,ppe:Number},
 data:()=>{
     return{
-        totalPrice:0
     }
 }
 }

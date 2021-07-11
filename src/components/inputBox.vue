@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div id="box">
-      <inputTextField fieldData="test"></inputTextField>
+      <inputTextField @update="textBoxUpdate" fieldData="test"></inputTextField>
     </div>
   </div>
 </template>
@@ -19,6 +19,11 @@ export default {
   data: ()=>{
     return{
       fieldData:''
+    }
+  },
+  methods:{
+    textBoxUpdate: function(msg){
+      this.$emit('update',msg)
     }
   }
 }

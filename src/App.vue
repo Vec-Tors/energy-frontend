@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <inputBox/>
-    <energyUsageBox ppe="10" energy="500" units="btu"/>
-    <solarOptions ppe="10" energy="500" units="btu" pps="40"/>
+    <inputBox @update="textBoxUpdate" />
+    <energyUsageBox :ppe="ppe" :energy="energy" :units="units"/>
+    <solarOptions :ppe="ppe" :energy="energy" :units="units" :pps="pps"/>
     <graph-box/>
   </div>
 </template>
@@ -19,7 +19,23 @@ export default {
     energyUsageBox,
     solarOptions,
     graphBox
+  },
+  data:()=>{
+    return{
+    ppe:0.1331,
+    energy:0,
+    units:"kwh",
+    pps:3500
+    }
+  },
+  methods:{
+    textBoxUpdate:function(msg){
+      this.$emit('cons',this.energy);
+      this.energy = msg;
+    }
   }
+
+
 }
 </script>
 

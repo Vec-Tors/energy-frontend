@@ -1,5 +1,5 @@
 <template>
-       <span><input type='text' class="inputtextbox" v-on:onchange="console.log(this.value)" :value="fieldData"></span>
+       <span><span type='text' class="inputtextbox" @keyup="onChange()" contenteditable>{{fieldData}}</span></span>
 
   
 </template>
@@ -10,15 +10,22 @@ export default {
     props:["fieldData"],
     data:()=>{
         return{
-            
+            fieldContent:''
         }
+    },
+    methods:{
+      onChange:function (){
+        this.fieldContent = document.getElementsByClassName("inputtextbox")[0].innerText;
+        console.log(this.fieldContent)
+        this.$emit('update',this.fieldContent)
+      }
     }
     
 }
 </script>
 
 <style scoped>
-#inputtextbox{
+.inputtextbox{
   border-style: solid;
   border-width: 20px;
   border-color: green;

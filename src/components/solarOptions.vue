@@ -12,7 +12,7 @@
 
     <div id="flexItem">
     <span class="secondBox">It would take about</span><br>
-    <span class="dataBox">{{Math.round(energy*pps/(energy*ppe))}} months</span><br>
+    <span class="dataBox">{{isNaN(Math.round(energy*pps/(energy*ppe)))?0:Math.round(energy*pps/(energy*ppe))}} months</span><br>
     <span class="secondBox">to save enough from your energy bill to pay off</span><br>
     <span class="dataBox">100%</span><br>
     <span class="secondBox">of the price you paid for solar panels</span>
