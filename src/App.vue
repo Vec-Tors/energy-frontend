@@ -3,6 +3,7 @@
     <inputBox/>
     <energyUsageBox ppe="10" energy="500" units="btu"/>
     <solarOptions ppe="10" energy="500" units="btu" pps="40"/>
+    <graph-box/>
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import inputBox from './components/inputBox.vue'
 import energyUsageBox from './components/energyUsageBox.vue'
 import solarOptions from './components/solarOptions.vue'
+import graphBox from './components/graph-box.vue'
 export default {
   name: 'App',
   components: {
     inputBox,
     energyUsageBox,
-    solarOptions
+    solarOptions,
+    graphBox
   }
 }
 </script>
