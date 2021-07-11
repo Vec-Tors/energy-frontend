@@ -34,10 +34,12 @@ export default {
 .main {
   display: flex;
   flex-wrap: wrap;
+  background-color: rgb(204, 252, 203);
 }
 #box {
 background: rgb(243, 243, 243);
 }
+
 
 
 </style>
