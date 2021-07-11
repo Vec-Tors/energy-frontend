@@ -23,7 +23,7 @@ export default {
   },
   methods:{
     textBoxUpdate: function(msg){
-      this.$emit('update',msg)
+      this.$emit('update',Number(msg))
     }
   }
 }

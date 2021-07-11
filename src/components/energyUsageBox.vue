@@ -4,7 +4,7 @@
       <span class="secondBox" id="amountOfenergy">You used about:</span><br>
       <span class="dataBox">{{energy}} {{units}}</span><br>
       <span class="secondBox" id="priceOfenergy">This costs about:</span><br>
-      <span class="dataBox">${{energy*ppe}}</span>
+      <span class="dataBox">${{Math.round(energy*ppe*100)/100}}</span>
   </div>
 </template>
 

@@ -6,14 +6,15 @@
     <span class="secondBox">You could spend</span><br>
     <span class="dataBox">${{energy*pps}}</span><br>
     <span class="secondBox">one time(minus any <a href="https://www.energy.gov/eere/solar/homeowners-guide-federal-tax-credit-solar-photovoltaics">federal or state credits</a>) and buy</span><br>
+    <span class="secondBox">one time() and buy</span><br>
     <span class="dataBox">{{energy}} {{units}}</span><br>
     <span class="secondBox">worth of solar panels. </span>
     </div>
 
     <div id="flexItem">
     <span class="secondBox">It would take about</span><br>
-    <span class="dataBox">{{isNaN(Math.round(energy*pps/(energy*ppe)))?0:Math.round(energy*pps/(energy*ppe))}} months</span><br>
-    <span class="secondBox">to save enough from your energy bill to pay off</span><br>
+    <span class="dataBox">{{isNaN(Math.round(energy*pps/(energy*ppe)))?0:Math.round(((energy*pps)/4)/(energy*ppe))}} months</span><br>
+    <span class="secondBox">to save enough from your energy bill to save off</span><br>
     <span class="dataBox">100%</span><br>
     <span class="secondBox">of the price you paid for solar panels</span>
     </div>

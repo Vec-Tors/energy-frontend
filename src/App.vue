@@ -25,7 +25,7 @@ export default {
     ppe:0.1331,
     energy:0,
     units:"kwh",
-    pps:3500
+    pps:1000
     }
   },
   methods:{
