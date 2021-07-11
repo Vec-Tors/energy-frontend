@@ -2,18 +2,20 @@
   <div id="app">
     <inputBox/>
     <energyUsageBox ppe="10" energy="500" units="btu"/>
+    <solarOptions ppe="10" energy="500" units="btu" pps="40"/>
   </div>
 </template>
 
 <script>
 import inputBox from './components/inputBox.vue'
 import energyUsageBox from './components/energyUsageBox.vue'
-
+import solarOptions from './components/solarOptions.vue'
 export default {
   name: 'App',
   components: {
     inputBox,
-    energyUsageBox
+    energyUsageBox,
+    solarOptions
   }
 }
 </script>
@@ -29,6 +31,7 @@ body{
   color: #2c3e50;
   display:flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   
 }
 </style>
