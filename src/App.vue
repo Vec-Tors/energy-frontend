@@ -1,9 +1,12 @@
 <template>
+  <div id="ma">
+<topBar />
   <div id="app">
     <inputBox @update="textBoxUpdate" />
     <energyUsageBox :ppe="ppe" :energy="energy" :units="units"/>
     <solarOptions :ppe="ppe" :energy="energy" :units="units" :pps="pps"/>
     <graph-box/>
+  </div>
   </div>
 </template>
 
@@ -12,20 +15,22 @@ import inputBox from './components/inputBox.vue'
 import energyUsageBox from './components/energyUsageBox.vue'
 import solarOptions from './components/solarOptions.vue'
 import graphBox from './components/graph-box.vue'
+import topBar from './components/topBar.vue'
 export default {
   name: 'App',
   components: {
     inputBox,
     energyUsageBox,
     solarOptions,
-    graphBox
+    graphBox,  
+    topBar
   },
   data:()=>{
     return{
     ppe:0.1331,
     energy:0,
     units:"kwh",
-    pps:1000
+    pps:2400
     }
   },
   methods:{
@@ -42,7 +47,8 @@ export default {
 <style>
 body {
   background: rgb(188, 255, 245);
-
+ padding: 0px;
+ margin: 0;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -60,5 +66,10 @@ body {
   border-color: black;
   padding-left: 20px;
   padding-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#ma{
+  padding: 0px;
 }
 </style>

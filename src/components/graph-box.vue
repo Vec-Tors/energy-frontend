@@ -29,7 +29,8 @@ data:()=>{
     numberOfStates:1,
     dataSets:["All Fuel Types","Petroleum Only","Renewable Only"],
     currentSet:"All Fuel Types",
-    graphURL:""
+    graphURL:"",
+    graphURLs:[]
   
   }
 },

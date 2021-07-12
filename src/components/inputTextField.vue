@@ -1,5 +1,5 @@
 <template>
-       <span><span type='text' class="inputtextbox" @keyup="onChange()" contenteditable>{{fieldData}}</span></span>
+       <span><span type='text' :id="name" @keyup="onChange()" contenteditable>{{fieldData}}</span></span>
 
   
 </template>
@@ -7,7 +7,7 @@
 <script>
 export default {
     name:'inputTextField',
-    props:["fieldData"],
+    props:["fieldData","name"],
     data:()=>{
         return{
             fieldContent:''
@@ -15,9 +15,10 @@ export default {
     },
     methods:{
       onChange:function (){
-        this.fieldContent = document.getElementsByClassName("inputtextbox")[0].innerText;
+        this.fieldContent = document.getElementById(this.name).innerText;
         console.log(this.fieldContent)
-        this.$emit('update',this.fieldContent)
+        this.$emit('cons',this.fieldContent)
+        this.$emit('update',{content:this.fieldContent,name:this.name})
       }
     }
     
@@ -25,14 +26,19 @@ export default {
 </script>
 
 <style scoped>
-#main {
-    background-color: rgb(204, 252, 203);
-}
+span span{
+  padding: 0px 20px;
+   border-style: dotted;
+  border-width: 1px;
+  border-color: black;
+    margin: 7px;
 
-.inputtextbox{
-  border-style: solid;
-  border-width: 20px;
-  border-color: green;
-  background-color: rgb(150, 230, 179);
+}
+span span:hover{
+ border-style: outset;
+ border-width: 2px;
+  border-color: black;
+
+
 }
 </style>
