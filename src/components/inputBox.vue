@@ -60,7 +60,7 @@ export default {
       LBP:60,
       ACP:3500,
       MDP:80,
-      RIH:4
+      RIH:3
     }
   },
   methods:{

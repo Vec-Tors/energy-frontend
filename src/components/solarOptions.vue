@@ -4,7 +4,7 @@
     <div id="container">
     <div id="flexItem1">
     <span class="secondBox">You could spend</span><br>
-    <span class="dataBox">${{(energy*(pps/3)).toPrecision(6)}}</span><br>
+    <span class="dataBox">${{(energy*(pps/4)).toPrecision(4)}}</span><br>
     <span class="secondBox">one time(minus any <a href="https://www.energy.gov/eere/solar/homeowners-guide-federal-tax-credit-solar-photovoltaics">federal or state credits</a>) and buy</span><br>
 
     <span class="dataBox">{{energy.toPrecision(6)}} {{units}}</span><br>
@@ -14,7 +14,7 @@
     </div>
     <div id="flexItem2">
     <span class="secondBox">It would take about</span><br>
-    <span class="dataBox">{{((energy*(pps/3))/(ppe*energy*30)).toPrecision(6)}} months</span><br>
+    <span class="dataBox">{{isNaN(((energy*(pps/4))/(ppe*energy*30)).toPrecision(4))?0:((energy*(pps/3.2))/(ppe*energy*30)+(energy/2000)).toPrecision(6)}} months</span><br>
     <span class="secondBox">to save enough from your energy bill to save off</span><br>
     <span class="dataBox">100%</span><br>
     <span class="secondBox">of the price you paid for solar panels</span>
