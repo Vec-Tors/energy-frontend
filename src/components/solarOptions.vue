@@ -6,7 +6,7 @@
     <span class="secondBox">You could spend</span><br>
     <span class="dataBox">${{energy*pps}}</span><br>
     <span class="secondBox">one time(minus any <a href="https://www.energy.gov/eere/solar/homeowners-guide-federal-tax-credit-solar-photovoltaics">federal or state credits</a>) and buy</span><br>
-    <span class="secondBox">one time() and buy</span><br>
+    <span class="secondBox">one time and buy</span><br>
     <span class="dataBox">{{energy}} {{units}}</span><br>
     <span class="secondBox">worth of solar panels. </span>
     </div>
