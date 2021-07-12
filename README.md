@@ -1,6 +1,8 @@
 # EcoTracker
 EcoTracker lets users list some of the appliances in their room and find out how much energy they consume in a day as well as how much that electricity costs. EcoTracker also shows users how much it would cost them to buy enough solar panels to cover the costs. Additionally, users can use EcoTracker to view historical data of their state's renewable and non-renewable energy consumption.
 
+[Devpost](https://devpost.com/software/ecotracker-uq7csy) - [Video](https://youtu.be/KaXqUdCITU4)
+
 ## Project setup
 ```
 npm install
