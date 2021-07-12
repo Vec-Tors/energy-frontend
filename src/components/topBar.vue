@@ -1,5 +1,5 @@
 <template>
-  <div class="top"> <span>EcoTracker</span></div>
+  <div class="top"><img src="/energy-frontend/recycle.png" width="50" height="50"> <span>EcoTracker</span><img src="/energy-frontend/recycle.png" width="50" height="50"></div>
 </template>
 
 <script>
@@ -16,7 +16,9 @@ export default {
   padding: 0px;
   font-size: 500%;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-  background: rgb(39, 198, 219);
+  align-items: center;
+
+
 
 }
 </style>

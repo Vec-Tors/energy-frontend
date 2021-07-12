@@ -29,7 +29,7 @@ data:()=>{
     numberOfStates:1,
     dataSets:["All Fuel Types","Petroleum Only","Renewable Only"],
     currentSet:"All Fuel Types",
-    graphURL:"",
+    graphURL:"//www.eia.gov/opendata/embed/iframe.php?series_id=ELEC.GEN.ALL-AL-99.A",
     graphURLs:[]
   
   }
